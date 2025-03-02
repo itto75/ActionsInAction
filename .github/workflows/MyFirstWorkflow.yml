@@ -1,9 +1,9 @@
 name: My First Workflow
 on:
   push:
-    branches: 
-    - main
-  #workflow_dispatch:
+    #branches: 
+   # - main
+  workflow_dispatch: # <- determins if you can manually run the workflow.
 
 jobs:
   MyFirstJob:
