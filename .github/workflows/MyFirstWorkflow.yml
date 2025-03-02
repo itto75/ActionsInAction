@@ -16,6 +16,7 @@ jobs:
     steps:
       - run: echo "Hello World"
 
+      # Checking out a repo allows access to the content within the repo. Example: For the step "List files of repo" If this is not set, it will return 0 files.
       - name: Checkout-Git-Repo
         uses: actions/checkout@v4.2.2
 
