@@ -1,8 +1,10 @@
 name: My First Workflow
 on:
-  #push:
-    #branches: 
-   # - main
+  # This section (push, branches and - main say this worklflow will be ran if a push is sent to the branch main
+  push: 
+    branches: 
+    - main
+  # having workflow_dispatch will determine if you can manually run the workflow.  
   workflow_dispatch: # <- determins if you can manually run the workflow.
 
 jobs:
