@@ -7,9 +7,9 @@ on:
   # having workflow_dispatch will determine if you can manually run the workflow.  
   workflow_dispatch: # <- determins if you can manually run the workflow.
 
-jobs:
-  MyFirstJob:
-    runs-on: ubuntu-latest
+#jobs:
+  #MyFirstJob:
+    #runs-on: ubuntu-latest
 
     steps:
       - run: echo "Hello World"
