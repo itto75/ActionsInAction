@@ -5,17 +5,19 @@ on:
     branches: 
     - main
   # having workflow_dispatch will determine if you can manually run the workflow.  
-  workflow_dispatch: # <- determins if you can manually run the workflow.
+  workflow_dispatch: 
 
-#jobs:
-  #MyFirstJob:
-    #runs-on: ubuntu-latest
-
+# jobs are what are ran in the workflow. Must have a name (MyFirstJob and what the job will run on (latest Ubuntu os in this example). 
+jobs:
+  MyFirstJob:
+    runs-on: ubuntu-latest
+    
+    # Steps are the actions taken in the job. Multiple steps can be in the job. 
     steps:
       - run: echo "Hello World"
 
-      - name: Checkout-Git-Repo
-        uses: actions/checkout@v4.2.2
+      #- name: Checkout-Git-Repo
+        #uses: actions/checkout@v4.2.2
 
       - name: List files of repo
         run: |
