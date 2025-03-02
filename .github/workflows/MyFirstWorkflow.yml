@@ -18,7 +18,7 @@ jobs:
 
       # Checking out a repo allows access to the content within the repo. Example: For the step "List files of repo" If this is not set, it will return 0 files.
       - name: Checkout
-      - uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4.2.2
 
       - name: List files of repo
       - run: |
