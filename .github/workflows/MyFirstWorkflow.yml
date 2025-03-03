@@ -12,7 +12,7 @@ jobs:
   MyFirstJob:
     runs-on: ubuntu-latest
     
-    # Steps are the actions taken in the job. Multiple steps can be in the job. The - name: protion of steps is not needed. Can imply use - run: or - uses: etc..
+    # Steps are the actions taken in the job. Multiple steps can be in the job. The - name: portion of steps is not needed. Can imply use - run: or - uses: etc..
     steps:
       - run: echo "Hello World"
 
