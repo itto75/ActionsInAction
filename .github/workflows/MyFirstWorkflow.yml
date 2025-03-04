@@ -17,7 +17,7 @@ jobs:
     
     # Steps are the actions taken in the job. Multiple steps can be in the job. The - name: portion of steps is not needed. Can imply use - run: or - uses: etc..
     steps:
-      - run: echo "Hello World"
+      - run: echo "${{ inputs.words }} live from ${{ github.repositor }}"
 
       # Checking out a repo allows access to the content within the repo. Example: For the step "List files of repo" If this is not set, it will return 0 files.
       - name: Checkout
