@@ -1,12 +1,17 @@
 name: My First Workflow
 on:
   # This section (push, branches and - main say this worklflow will be ran if a push is sent to the branch main
-  push: 
+  push: # <- webhook trigger
     branches: 
     - main
   # having workflow_dispatch will determine if you can manually run the workflow.  
   workflow_dispatch: 
+    inputs:
+      thing:
+      required: true
 
+word: word
+  
 # jobs are what are ran in the workflow. Must have a name (MyFirstJob and what the job will run on (latest Ubuntu os in this example). 
 jobs:
   MyFirstJob:
