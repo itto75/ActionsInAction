@@ -6,11 +6,6 @@ on:
     - main
   # having workflow_dispatch will determine if you can manually run the workflow.  
   workflow_dispatch: 
-    inputs:
-      thing:
-      required: true
-
-word: word
   
 # jobs are what are ran in the workflow. Must have a name (MyFirstJob and what the job will run on (latest Ubuntu os in this example). 
 jobs:
