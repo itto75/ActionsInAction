@@ -14,10 +14,16 @@ on:
 jobs:
   MyFirstJob:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        sayings: ["Hello world!", "Salut monde", "Nagh Ragornok!"]
+        number: [1, 2, 3, 4, 5]
     
     # Steps are the actions taken in the job. Multiple steps can be in the job. The - name: portion of steps is not needed. Can imply use - run: or - uses: etc..
     steps:
       - run: echo "${{ inputs.words }} live from ${{ github.repository }}"
+
+      - run: echo "${{ matrix.sayings }} then comes the number ${{ matrix.number }}"
 
       # Checking out a repo allows access to the content within the repo. Example: For the step "List files of repo" If this is not set, it will return 0 files.
       - name: Checkout
